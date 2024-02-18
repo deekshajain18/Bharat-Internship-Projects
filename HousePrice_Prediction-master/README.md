@@ -1,31 +1,40 @@
+# House Price Prediction
 
-# House Price Prediction Model
-This repository contains a simple House Price Prediction model implemented using Python. The project follows a structured process, including data cleaning, model development using Ridge regression, and the creation of a web-based user interface using Flask.
+## Description
+This project involves developing a machine learning model for predicting house prices using Python, scikit-learn, and TensorFlow. The model is deployed as a web application using Flask.
 
-Key Components
-## Data Cleaning: The model utilizes a dataset from Kaggle (Seattle House Price Prediction). The dataset undergoes cleaning to handle missing values, categorical data, and other preprocessing steps.
+## Contents
+- `app.py`: Flask web application for interacting with the model.
+- `final_dataset.csv`: Dataset used for training and testing the model.
+- `RidgeModel.pkl`: Pickled model file for deployment.
+- `index.html`: HTML template for the web application interface.
 
-## Model Development: The machine learning model is implemented using Ridge regression, leveraging the scikit-learn library. The trained model is saved for later use.
+## Usage
+1. Clone the repository:
+git clone <repository_url>
 
-## Flask Web Application: The project incorporates a Flask web application, providing a user-friendly interface for predicting house prices. Users can input details such as the number of bedrooms, bathrooms, house size, and zip code to receive a price prediction.
-
-Usage
-Clone the repository:
-
-git clone https://github.com/yourusername/HousePrice_Prediction.git
-cd HousePrice_Prediction
-
-Install dependencies:
-
+2. Install dependencies:
 pip install -r requirements.txt
 
-Run the Flask application:
+3. Run the Flask web application:
+python app.py
 
+4. Access the application in your web browser at `http://localhost:5000`.
 
-python main.py
+## How to Predict
+- Enter the number of bedrooms, bathrooms, size, and zip code in the input form.
+- Click the "Predict" button to get the predicted house price.
 
-Open your web browser and visit http://127.0.0.1:5000/ to interact with the House Price Prediction interface.
+## Additional Notes
+- Ensure that the necessary dependencies are installed before running the application.
+- The model utilizes Ridge regression for predicting house prices.
+- Handle unknown categories in the input data by replacing them with default values.
+- The application runs in debug mode for development purposes.
 
-Datasets Used
-Seattle House Price Prediction Dataset [Kaggle]
-Feel free to explore and adapt the project for your own use. If you have any questions or suggestions, please create an issue or reach out to yourusername. Happy coding!
+## Requirements
+- Python 3.x
+- Flask
+- pandas
+- scikit-learn
+- TensorFlow
+
