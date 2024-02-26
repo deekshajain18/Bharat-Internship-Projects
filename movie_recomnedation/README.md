@@ -1,34 +1,47 @@
-# Movie Recommendation System using Collaborative Filtering
+# Movie Recommendation System
 
-This repository contains Python code for building a movie recommendation system using collaborative filtering techniques. Collaborative filtering is a method used for making automatic predictions (filtering) about the interests of a user by collecting preferences from many users (collaborating).
+This repository contains code for a movie recommendation system using collaborative filtering techniques.
+
+## Introduction
+
+The movie recommendation system is built using Python and leverages the Pandas library for data manipulation and analysis. It utilizes collaborative filtering to recommend movies to users based on their ratings and similarities with other users.
 
 ## Dataset
-The dataset used in this project consists of movie ratings provided by users. It includes the following columns:
 
-->user_id: Unique identifier for each user.<br/>
-=>item_id: Unique identifier for each movie/item.<br/>
-->rating: Rating given by the user for a particular movie.<br/>
-->timestamp: Timestamp indicating when the rating was provided.<br/>
-The dataset is loaded from a TSV file (m_id.tsv) and merged with another dataset (Movie_Id_Titles.csv) containing movie titles.
+The dataset used in this project consists of movie ratings provided by users. It includes information such as user ID, item ID (movie ID), rating, and timestamp.
 
-Exploratory Data Analysis (EDA)
-The EDA includes the following steps:
+The dataset is loaded from a TSV (Tab-Separated Values) file named `m_id.tsv`. Additionally, movie titles are loaded from a CSV file named `Movie_Id_Titles.csv`.
 
-Calculating the mean rating and count of ratings for each movie.
-Visualizing the distribution of the number of ratings and the ratings themselves using histograms.
-Building the Recommendation System
-The recommendation system is built using collaborative filtering:
+## Usage
 
-Constructing a user-item matrix where rows represent users, columns represent movies, and each cell contains the rating given by the user to the movie.
-Finding similar movies based on user ratings using correlation.
-Generating recommendations for a given movie (e.g., "Star Wars (1977)") by identifying movies with high correlation to it.
-Usage
-Ensure you have Python and the necessary libraries installed (e.g., pandas, matplotlib, seaborn).
-Clone this repository.
-Run the provided Python script (movie_recommendation.py) to execute the recommendation system.
-Explore the generated recommendations and insights.
-Results
-The results include lists of similar movies for selected titles such as "Star Wars (1977)" and "Liar Liar (1997)" based on user ratings and correlation.
+1. Clone the repository:
 
-Conclusion
-Collaborative filtering provides a powerful method for generating personalized recommendations based on user preferences. This project demonstrates how to implement such a system using Python and pandas, offering insights into movie recommendations for users.
+    ```bash
+    git clone https://github.com/yourusername/movie-recommendation-system.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd movie-recommendation-system
+    ```
+
+3. Install the required dependencies:
+
+    ```bash
+    pip install pandas matplotlib seaborn
+    ```
+
+4. Run the Jupyter notebook:
+
+    ```bash
+    jupyter notebook
+    ```
+
+5. Open the notebook `Movie_Recommendation_System.ipynb` and execute the cells to see the movie recommendations and analysis.
+
+## Results
+
+The system provides recommendations based on user ratings and identifies similar movies using correlation metrics. It also generates visualizations to analyze the distribution of ratings and the number of ratings per movie.
+
+
