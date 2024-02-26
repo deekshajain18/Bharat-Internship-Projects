@@ -5,10 +5,10 @@ This repository contains Python code for building a movie recommendation system 
 ## Dataset
 The dataset used in this project consists of movie ratings provided by users. It includes the following columns:
 
-- 'user_id' : Unique identifier for each user.
-item_id: Unique identifier for each movie/item.
-rating: Rating given by the user for a particular movie.
-timestamp: Timestamp indicating when the rating was provided.
+->user_id: Unique identifier for each user.
+=>item_id: Unique identifier for each movie/item.
+->rating: Rating given by the user for a particular movie.
+->timestamp: Timestamp indicating when the rating was provided.
 The dataset is loaded from a TSV file (m_id.tsv) and merged with another dataset (Movie_Id_Titles.csv) containing movie titles.
 
 Exploratory Data Analysis (EDA)
