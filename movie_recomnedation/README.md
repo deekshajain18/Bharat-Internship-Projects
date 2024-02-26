@@ -1,9 +1,8 @@
 # Movie Recommendation System using Collaborative Filtering
 
-
 This repository contains Python code for building a movie recommendation system using collaborative filtering techniques. Collaborative filtering is a method used for making automatic predictions (filtering) about the interests of a user by collecting preferences from many users (collaborating).
 
-Dataset
+## Dataset
 The dataset used in this project consists of movie ratings provided by users. It includes the following columns:
 
 user_id: Unique identifier for each user.
