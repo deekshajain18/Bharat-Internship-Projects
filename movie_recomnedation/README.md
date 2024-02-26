@@ -5,7 +5,7 @@ This repository contains Python code for building a movie recommendation system 
 ## Dataset
 The dataset used in this project consists of movie ratings provided by users. It includes the following columns:
 
-user_id: Unique identifier for each user.
+- 'user_id' : Unique identifier for each user.
 item_id: Unique identifier for each movie/item.
 rating: Rating given by the user for a particular movie.
 timestamp: Timestamp indicating when the rating was provided.
